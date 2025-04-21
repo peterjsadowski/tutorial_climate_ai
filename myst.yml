@@ -13,6 +13,7 @@ project:
     - file: intro.md
     - file: 00_prepare_data.ipynb
     - file: 01_warmup_digits.ipynb
+      #title: Warmup: MNIST
     - file: 02_predict_ENSO.ipynb
     
 site:

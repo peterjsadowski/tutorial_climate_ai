@@ -1,3 +1,25 @@
+---
+title: Introduction
+authors:
+    - name: Peter Sadowski
+      affiliations:
+        - id: uhcs
+          institution: University of Hawaii Manoa
+          department: Information and Computer Sciences
+          city: Honolulu
+          website: https://peterjsadowski.github.io
+        - Information and Computer Sciences # A hack
+    - name: Gerardo Rivera Tello
+      affiliations:
+        - id: uhatmo
+          institution: University of Hawaii Manoa
+          department: Atmospheric Sciences
+          city: Honolulu
+          website: https://griverat.github.io
+        - Atmospheric Sciences # A hack
+
+---
+
 # Introduction
 
 This workshop tutorial introduces applications of artificial intelligence to climate modeling. The applications are very simple to give the participants an interactive experience, with the goal of providing intuition for how these methods can be used.

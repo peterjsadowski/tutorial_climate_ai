@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: AI for Climate Tutorial
 authors:
     - name: Peter Sadowski
       affiliations:
@@ -20,14 +20,31 @@ authors:
 
 ---
 
-# Introduction
+# Welcome 
 
-This workshop tutorial introduces applications of artificial intelligence to climate modeling. The applications are very simple to give the participants an interactive experience, with the goal of providing intuition for how these methods can be used.
- 
+This workshop introduces climate applications of artificial intelligence (AI) and machine learning (ML). The first part will provide an overview of some different applications. The second part will be a tutorial with hands-on examples. The examples are chosen to build participants' intuition for AI uses in weather and climate modeling while still being small enough to run on a laptop or [Google Colab](https://colab.research.google.com).  
+
+# Outline
+
+1. Presentation on applications of AI for climate
+1. Tutorial: training AI models in Pytorch for computer vision.
+1. Tutorial: predicting ENSO with AI
+1. Tutorial: predicting SST with AI
+
+
+For this workshop we will use NOAA's sea surface temperature (SST) data [](#fig:sst_daily). We will be analyzing the monthly SST anomaly from historical means.
+
+% A figure of an image with a caption.
+:::{figure} https://psl.noaa.gov/map/images/sst/sst.daily.gif
+:label: fig:sst_daily
+
+Today's sea surface temperature, courtesy of [NOAA](https://psl.noaa.gov/map/clim/sst.shtml).
+:::
+
 
 % An admonition containing a note
 :::{note}
-This tutorial uses _real_ data, but subsampled to make it manageable!
+This tutorial uses _real_ data, but the data has been processed down to size that can be downloaded quickly for the examples given here. The data processing code is included in a separate section so that you can reproduce it if needed. 
 :::
 
 
@@ -38,13 +55,18 @@ This tutorial uses _real_ data, but subsampled to make it manageable!
 %x \times y = z
 %:::
 
-For this workshopwe will use NOAA's sea surface temperature (SST) data [](#fig:sst_daily). We will be analyzing the monthly SST anomaly from historical means.
 
-% A figure of a photograph of some mountains, followed by a caption
-:::{figure} https://psl.noaa.gov/map/images/sst/sst.daily.gif
-:label: fig:sst_daily
+# Learning Outcomes
 
-Today's sea surface temperature, courtesy of [NOAA](https://psl.noaa.gov/map/clim/sst.shtml).
-:::
+1. Familiarity with common applications of ML in climate and weather modeling
+1. Familiarity with challenges of applying ML 
+1. Understanding the basics of probabilistic ML
+1. Experience training deep neural network models in Pytorch
+1. Experience with model evaluation and model selection
 
-Built using [Jupyter Book](https://next.jupyterbook.org/).
+# Prerequisites
+
+- Familiarity with Python
+- Python environment with Numpy, Pytorch, Matplotlib installed 
+
+

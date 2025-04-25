@@ -14,6 +14,8 @@ project:
     - file: 01_warmup_digits.ipynb
     - file: 02_predict_ENSO.ipynb
     - file: 03_prepare_data.ipynb
+    - file: 04_regression.ipynb
+    - file: 05_predicting_SST.ipynb
     - file: conclusion.md
     
 site:

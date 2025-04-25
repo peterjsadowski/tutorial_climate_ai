@@ -28,8 +28,9 @@ This workshop introduces climate applications of artificial intelligence (AI) an
 
 1. Presentation on applications of AI for climate
 1. Tutorial: training AI models in Pytorch for computer vision.
-1. Tutorial: predicting ENSO with AI
-1. Tutorial: predicting SST with AI
+1. Tutorial: predicting ENSO with classifier
+1. Tutorial: regression models
+1. Tutorial: predicting SST with autoregression
 
 
 For this workshop we will use NOAA's sea surface temperature (SST) data [](#fig:sst_daily). We will be analyzing the monthly SST anomaly from historical means.
@@ -69,4 +70,16 @@ This tutorial uses _real_ data, but the data has been processed down to size tha
 - Familiarity with Python
 - Python environment with Numpy, Pytorch, Matplotlib installed 
 
+# Creating a Python Environment
 
+Google Colab provides a free cloud Jupyter server that can run this tutorial. Pytorch and other libraries are preinstalled there. However, Colab resources are sometimes busy, so you might need to run things on your own machine.
+
+Here is a suggested local setup. Download [Anaconda](https://www.anaconda.com/download/success) and install. Then, from a terminal run the following commands:
+
+```
+conda create --name tutorial
+conda activate tutorial
+conda install numpy matplotlib jupyterlab nb_conda_kernels pandas xarray urllib
+conda install cartopy cmocean
+pip install torch
+```
